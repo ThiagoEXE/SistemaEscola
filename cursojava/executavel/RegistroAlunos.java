@@ -1,26 +1,44 @@
 package cursojava.executavel;
 
+import javax.swing.JOptionPane;
+
 import cursojava.classes.Aluno;
 
 public class RegistroAlunos{
 
 	public static void main(String[] args) {
+		
+		String nome = JOptionPane.showInputDialog("Qual o nome do aluno?");
+		String idade = JOptionPane.showInputDialog("Qual a idade?");
+		String dataNascimento = JOptionPane.showInputDialog("Data de nascimento?");
+		String rg = JOptionPane.showInputDialog("Registro Geral?");
+		String cpf = JOptionPane.showInputDialog("Qual é o CPF?");
+		String mae = JOptionPane.showInputDialog("Nome da mãe?");
+		String pai = JOptionPane.showInputDialog("Nome do pai?");
+		String matricula = JOptionPane.showInputDialog("Data da matricula");
+		String serie = JOptionPane.showInputDialog("Qual a série?");
+		String escola = JOptionPane.showInputDialog("Qual o nome da escola?");
+		String nota1 = JOptionPane.showInputDialog("Qual a nota 1?");
+		String nota2 = JOptionPane.showInputDialog("Qual a nota 2?");
+		String nota3 = JOptionPane.showInputDialog("Qual a nota 3?");
+		String nota4 = JOptionPane.showInputDialog("Qual a nota 4?");
+
 
 		Aluno aluno1 = new Aluno();
-		aluno1.setNome("THIAGO BARBOSA DE OLIVEIRA");
-		aluno1.setIdade(25);
-		aluno1.setDataNascimento("25/04/1996");
-		aluno1.setRegistroGeral("14.859.098-58");
-		aluno1.setNumeroCPF("069.398.236-86");
-		aluno1.setNomeMae("JACIARA LIMA ALVES");
-		aluno1.setNomePai("MANOEL SANTOS DE JESUS");
-		aluno1.setDataMatricula("26/12/2011");
-		aluno1.setSerieMatriculado("<<-  3° ANO  ->>");
-		aluno1.setNomeEscola("Jdev Treinamentos");
-		aluno1.setNota1(90);
-		aluno1.setNota2(80.8);
-		aluno1.setNota3(70.9);
-		aluno1.setNota4(90.7);
+		aluno1.setNome(nome);
+		aluno1.setIdade(Integer.valueOf(idade)); //convertendo String em inteiro
+		aluno1.setDataNascimento(dataNascimento);
+		aluno1.setRegistroGeral(rg);
+		aluno1.setNumeroCPF(cpf);
+		aluno1.setNomeMae(mae);
+		aluno1.setNomePai(pai);
+		aluno1.setDataMatricula(matricula);
+		aluno1.setSerieMatriculado(serie);
+		aluno1.setNomeEscola(escola);
+		aluno1.setNota1(Double.parseDouble(nota1)); //convertendo String em double 
+		aluno1.setNota2(Double.parseDouble(nota2));
+		aluno1.setNota3(Double.parseDouble(nota3));
+		aluno1.setNota4(Double.parseDouble(nota4));
 		
 		
 		System.out.println("Nome é: " + aluno1.getNome() + "\n" + "Idade: " + aluno1.getIdade() + 
