@@ -41,13 +41,8 @@ public class RegistroAlunos{
 		aluno1.setNota4(Double.parseDouble(nota4));
 		
 		
-		System.out.println("Nome é: " + aluno1.getNome() + "\n" + "Idade: " + aluno1.getIdade() + 
-	    "\n" + "Data de Nascimento: " + aluno1.getDataNascimento() + "\n" + "RG: " + aluno1.getRegistroGeral() + 
-	    "\n" + "CPF: " + aluno1.getNumeroCPF() + "\n" + "Nome da Mãe: " + aluno1.getNomeMae() + 
-	    "\n" + "Nome do Pai: " + aluno1.getNomePai() + "\n" + "Data da Matrícula: " + aluno1.getDataMatricula() + 
-	    "\n" + "Série Matriculado(a): " + aluno1.getSerieMatriculado() + "\n" + "Nome da Escola: " + aluno1.getNomeEscola());
-		System.out.println("Média da nota é:  " + aluno1.getMediaNota());
-        //Usando operador ternário para imprimir se foi "Aprovado" ou "Reprovado"
+		System.out.println(aluno1);
+		System.out.println("Média do aluno = " +aluno1.getMediaNota());
 		System.out.print("Resultado: " + (aluno1.getAlunoAprovado() ? "Aprovado" : "Reprovado"));
 	
 		
